@@ -1,16 +1,16 @@
-void main() {
-  var name = 'Voyager I';
-  var year = 1977;
-  var antennaDiameter = 3.7;
-  var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
-  var image = {
-    'tags': ['saturn'],
-    'url': '//path/to/saturn.jpg'
-  };
+// 使用var声明变量，可赋予不同类型的值
+// 未初始化时，默认值为null
+// 使用final声明一个只能赋值一次的变量
+// 使用const声明常亮，必须是编译期常量
 
-  print(name);
-  print(year);
-  print(antennaDiameter);
-  print(flybyObjects);
-  print(image);
+void main() {
+  var nullValue;
+  var str = 'My name is John';
+  final f = 30;
+  const c = 3.14;
+
+  print(nullValue);
+  // null
+  print(str);
+  // My name is John
 }
