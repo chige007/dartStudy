@@ -3,7 +3,6 @@
  */
 
 // !  &&  ||
-// 布尔值
 
 void main() {
   var isTrue = true;

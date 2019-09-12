@@ -13,7 +13,6 @@
 // List
 // List就是数组
 
-// 运算符：+  -  *  /  ~/  %
 // 常用操作：[]  length  add()  insert()  remove()  clear()  indexOf()  lastIndexOf()  sort()  sublist()  shuffle()  asMap()  forEach()
 
 void main() {

@@ -11,10 +11,6 @@
 // Runes、Symbols
 
 // Boolean
-// 分为整型Int和浮点型double
-// 运算符：+  -  *  /  ~/  %
-// 常用属性：isNaN   isEven  isOdd
-// 常用方法：abs()  round()  floor()  ceil()  toInt()  toDouble()
 
 void main() {
     bool isTrue = true;
