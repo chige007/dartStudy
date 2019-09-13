@@ -7,7 +7,7 @@
  * 默认参数只能是编译器的常量
  */
 
-void main(List args) {
+void main() {
   print(getPerson('Beonyce'));
   // name is Beonyce, age is null, sex is 1
   print(getPerson2('JayZ'));

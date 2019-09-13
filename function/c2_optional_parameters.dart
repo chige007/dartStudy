@@ -8,7 +8,7 @@
  * 若有固定参数，可选参数必须定义在固定参数后面
  */
 
-void main(List args) {
+void main() {
   print(getPerson('John'));
   // name is John, age is null, sex is null
   print(getPerson('John', age: 20));
