@@ -16,6 +16,7 @@
  * 使用_表示库的稀有性
  * 使用import导入一个库
  */
+import 'people.dart';
 
 void main() {
   var p1 = new Boy();
@@ -29,6 +30,10 @@ void main() {
   print(p1.gender);
   print(p1._birday);
   // 1
+
+  var people = new People('Ben', 12, new DateTime(1977, 9, 5));
+  people.getName();
+  // my Name is Ben
 }
 
 class Boy {
