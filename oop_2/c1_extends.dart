@@ -34,8 +34,26 @@ void main() {
   }
 }
 
-class Student extends Person{
+class Person{
+  String name;
+  int age;
+  bool get isAdult => age >= 18;
 
+  void run() {
+    print('$name is running');
+  }
+  void work() {
+    print('$name is working');
+  }
+  // 复写Object对象的方法
+  @override
+  String toString() {
+    // TODO: implement toString
+    return 'This is a new method';
+  }
+}
+
+class Student extends Person{
   // 复写getter
   @override
   bool get isAdult => age >= 16;
@@ -46,30 +64,7 @@ class Student extends Person{
     // TODO: implement run
     print('student $name is running');
   }
-
   void study() {
     print('$name is studying');
-  }
-}
-
-class Person{
-  String name;
-  int age;
-
-  bool get isAdult => age >= 18;
-
-  void run() {
-    print('$name is running');
-  }
-
-  void work() {
-    print('$name is working');
-  }
-
-  // 复写Object对象的方法
-  @override
-  String toString() {
-    // TODO: implement toString
-    return 'This is a new method';
   }
 }
