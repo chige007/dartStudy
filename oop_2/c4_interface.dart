@@ -9,16 +9,15 @@
  */
 
 void main() {
-  var p = Person();
+  var p = new Student();
   p.name = 'chenyc';
   p.run();
-  // chenyc is 18 years old
+  // Student chenyc is 16 years old
 }
 
-class Person{
+abstract class Person{
   String name;
   int get age => 18;
-
 
   void run() {
     print('$name is $age years old');
