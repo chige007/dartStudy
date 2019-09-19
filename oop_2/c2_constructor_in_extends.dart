@@ -34,7 +34,7 @@ class Person{
 }
 
 class Student extends Person{
-  // 复写方法
+  // 覆写方法
   @override
   void run() {
     // TODO: implement run

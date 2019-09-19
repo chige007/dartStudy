@@ -4,7 +4,7 @@
  * 
  * 使用关键字extends继承一个类
  * 子类会继承父类可见属性和方法，不会继承构造方法
- * 子类能够复写父类的方法、getter和setter
+ * 子类能够覆写父类的方法、getter和setter
  * 单继承，多态性
  */
 
@@ -45,7 +45,7 @@ class Person{
   void work() {
     print('$name is working');
   }
-  // 复写Object对象的方法
+  // 覆写Object对象的方法
   @override
   String toString() {
     // TODO: implement toString
@@ -54,11 +54,11 @@ class Person{
 }
 
 class Student extends Person{
-  // 复写getter
+  // 覆写getter
   @override
   bool get isAdult => age >= 16;
 
-  // 复写方法
+  // 覆写方法
   @override
   void run() {
     // TODO: implement run
