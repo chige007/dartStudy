@@ -15,12 +15,24 @@ void main(List<String> args) {
   var u2 = new Utils<int>();
   u2.put(123);
   // 123
+
+  var u3 = new Utils2();
+  u3.put<String>('abc');
+  // abc
+  u3.put<int>(123);
+  // 123
 }
 
 class Utils<T>{
   T element;
 
   void put(T element) {
+    print(element);
+  }
+}
+
+class Utils2{
+  void put<T>(T element) {
     print(element);
   }
 }
